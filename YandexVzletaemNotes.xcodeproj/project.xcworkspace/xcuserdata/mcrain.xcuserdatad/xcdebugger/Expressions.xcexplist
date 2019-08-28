@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ImagePreviewVC.viewWillAppear(_:):ImagePreviewVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "passedContentOffset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Note.parse(json:):NoteExtension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;color&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteViewController.viewDidLoad():NoteViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myTextView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotesTableViewController.addNote(_:):NotesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "noteBook.notes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ColorPickerViewClass.layoutSubviews():ColorPickerViewClass.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "colorPickerView.colorPickerCursorView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "textView">
+            </PersistentString>
+            <PersistentString
+               value = "textView.textColor">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerView.colorPickerCursorView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetails.doShow():NoteDetails.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myTextView">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerView.textView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HSBColorPicker.getPointForColor(color:):HSBColorPicker.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Brightness">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HSBColorPicker.ColorChoosen.didset:HSBColorPicker.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ColorChoosen">
+            </PersistentString>
+            <PersistentString
+               value = "UIColor.blue">
+            </PersistentString>
+            <PersistentString
+               value = "UIColor.white">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerCursorView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewControllerPhoto.collectionView(_:didSelectItemAt:):ViewControllerPhoto.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ColorPickerViewClass.setupViews():ColorPickerViewClass.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerView">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerView.colorPickerCursorView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SaveNoteOperation.main():SaveNoteOperation.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "saveToBackend">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetails.imageTapped4Long(tapGestureRecognizer:):NoteDetails.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "colorPickerView.colorPickerView.colorPickerCursorView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "myTextView.textColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HSBColorPicker.updateUI():HSBColorPicker.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ColorChoosen">
+            </PersistentString>
+            <PersistentString
+               value = "colorPickerCursorView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotesTableViewController.tableView(_:cellForRowAt:):NotesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "notebook.notes">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImagePreviewVC.viewDidLoad():ImagePreviewVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "passedContentOffset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HSBColorPicker.initialize():HSBColorPicker.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ColorChoosen">
+            </PersistentString>
+            <PersistentString
+               value = "UIColor.blue">
+            </PersistentString>
+            <PersistentString
+               value = "UIColor.white">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetails.switchChanged(_:):NoteDetails.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.delegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
