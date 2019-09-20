@@ -8,11 +8,6 @@
 
 import UIKit
 
-/*
-internal protocol HSBColorPickerDelegate : NSObjectProtocol {
-    func HSBColorColorPickerTouched(sender:HSBColorPicker, color:UIColor, point:CGPoint, state:UIGestureRecognizer.State)
-}
-*/
 @IBDesignable
 class ColorPickerCursorView : UIView {
     var shapePosition: CGPoint = .zero
@@ -142,18 +137,6 @@ class HSBColorPicker : UIView {
         let percentageY = powf(Float(saturation), 1.0 / saturationExponentTop)
         yPos = CGFloat(percentageY) * halfHeight
         
-        
-
-        /*
-        if (brightness >= 0.99) {
-            let percentageY = powf(Float(saturation), 1.0 / saturationExponentTop)
-            yPos = CGFloat(percentageY) * halfHeight
-        } else {
-            //use brightness to get Y
-            yPos = halfHeight + halfHeight * (1.0 - brightness)
-        }
-        */
-
         let xPos = hue * self.bounds.width
         print("GetPoint ", color)
         return CGPoint(x: xPos, y: self.bounds.height - yPos)
@@ -167,7 +150,6 @@ class HSBColorPicker : UIView {
             updateUI()
             colorPickerCursorView.center.x = point.x
             colorPickerCursorView.center.y = point.y
-            //self.delegate?.HSBColorColorPickerTouched(sender: self, color: ColorChoosen, point: point, state:gestureRecognizer.state)
         }
     }
 }
