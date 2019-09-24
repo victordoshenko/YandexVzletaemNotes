@@ -13,11 +13,21 @@
         <!--Заметки-->
         <scene sceneID="OAP-fD-XKl">
             <objects>
-                <tableViewController id="c8N-MS-8Uj" userLabel="Заметки" customClass="NotesTableViewController" customModule="Yandex49" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c8N-MS-8Uj" userLabel="Заметки" customClass="NotesTableViewController" customModule="YandexVzletaemNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fnh-HT-ovK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Lcc-1B-jbU">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lcc-1B-jbU" id="fhr-zF-OOf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="c8N-MS-8Uj" id="KVV-wK-Gg2"/>
                             <outlet property="delegate" destination="c8N-MS-8Uj" id="qET-YC-Ods"/>
@@ -97,7 +107,7 @@
         <!--View Controller Photo-->
         <scene sceneID="ttO-8A-Eag">
             <objects>
-                <viewController id="hcQ-7i-VlZ" customClass="ViewControllerPhoto" customModule="Yandex49" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hcQ-7i-VlZ" customClass="ViewControllerPhoto" customModule="YandexVzletaemNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYq-nl-ikv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

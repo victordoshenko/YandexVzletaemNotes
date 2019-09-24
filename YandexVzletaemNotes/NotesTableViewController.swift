@@ -13,6 +13,8 @@ protocol testDelegateProtocol {
 }
 
 class NotesTableViewController: UITableViewController, testDelegateProtocol {
+    private let cellIdentifier = "cell"
+
     let notebook = FileNotebook()
     let backendQueue = OperationQueue()
     let dbQueue = OperationQueue()
@@ -26,6 +28,8 @@ class NotesTableViewController: UITableViewController, testDelegateProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.register(NotesTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.register(UINib(nibName: "NotesTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
 
         //Операция загрузки списка заметок LoadNotesOperation, вызывается при отображении списка заметок
         let loadNotesOperation = LoadNotesOperation(
@@ -63,18 +67,13 @@ extension NotesTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NotesTableViewCell
         let note = notebook.notes[indexPath.row]
 
-        let myTitleString = NSMutableAttributedString(string: "█ " + note.title, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 25)])
-        myTitleString.addAttribute(NSAttributedString.Key.foregroundColor, value: note.color, range: NSRange(location:0,length:1))
-        cell.textLabel?.attributedText = myTitleString
+        cell.noteTitleLabel.text = note.title
+        cell.noteContentLabel.text = note.content
+        cell.noteColorView.backgroundColor = note.color
         
-        let myContentString = NSMutableAttributedString(string: note.content, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22)])
-        myContentString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.gray , range: NSRange(location:0,length: note.content.count))
-
-        cell.detailTextLabel?.attributedText = myContentString
-        cell.detailTextLabel?.numberOfLines = 5
         return cell
     }
 
