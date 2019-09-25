@@ -1,8 +1,6 @@
 import UIKit
 import Photos
 
-
-
 class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     var myCollectionView: UICollectionView!
@@ -63,12 +61,6 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
-        /*
-        let vc = GalleryViewController()
-        vc.imgArray = self.imageArray
-        vc.passedContentOffset = indexPath
-        self.navigationController?.pushViewController(vc, animated: true)
-        */
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = cellsPerRow == 3 ? .horizontal : .vertical
         }
@@ -85,11 +77,6 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
-        //        if UIDevice.current.orientation.isPortrait {
-        //            return CGSize(width: width/4 - 1, height: width/4 - 1)
-        //        } else {
-        //            return CGSize(width: width/6 - 1, height: width/6 - 1)
-        //        }
         if DeviceInfo.Orientation.isPortrait {
             return CGSize(width: width/cellsPerRow - 1, height: width/cellsPerRow - 1)
         } else {
