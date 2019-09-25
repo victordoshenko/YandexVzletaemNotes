@@ -7,6 +7,7 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
 
     var myCollectionView: UICollectionView!
     var imageArray=[UIImage]()
+    var cellsPerRow: CGFloat = 3
     
     @objc func addClicked(_ sender: Any) {
         print("Choose Pic!")
@@ -41,6 +42,7 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
         myCollectionView.dataSource=self
         myCollectionView.register(PhotoItemCell.self, forCellWithReuseIdentifier: "Cell")
         myCollectionView.backgroundColor=UIColor.white
+        myCollectionView.isPagingEnabled = true
         self.view.addSubview(myCollectionView)
         
         myCollectionView.autoresizingMask = UIView.AutoresizingMask(rawValue: UIView.AutoresizingMask.RawValue(UInt8(UIView.AutoresizingMask.flexibleWidth.rawValue) | UInt8(UIView.AutoresizingMask.flexibleHeight.rawValue)))
@@ -61,11 +63,24 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
-        //let vc=ImagePreviewVC()
+        /*
         let vc = GalleryViewController()
         vc.imgArray = self.imageArray
         vc.passedContentOffset = indexPath
         self.navigationController?.pushViewController(vc, animated: true)
+        */
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = cellsPerRow == 3 ? .horizontal : .vertical
+        }
+
+        if cellsPerRow == 3 {
+            cellsPerRow = 1
+        } else {
+            cellsPerRow = 3
+        }
+        myCollectionView.reloadData()
+        myCollectionView.selectItem(at: indexPath, animated: false, scrollPosition: .left)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -76,9 +91,9 @@ class ViewControllerPhoto: UIViewController, UICollectionViewDelegate, UICollect
         //            return CGSize(width: width/6 - 1, height: width/6 - 1)
         //        }
         if DeviceInfo.Orientation.isPortrait {
-            return CGSize(width: width/3 - 1, height: width/3 - 1)
+            return CGSize(width: width/cellsPerRow - 1, height: width/cellsPerRow - 1)
         } else {
-            return CGSize(width: width/6 - 1, height: width/6 - 1)
+            return CGSize(width: width/(cellsPerRow * 2) - 1, height: width/(cellsPerRow * 2) - 1)
         }
     }
     

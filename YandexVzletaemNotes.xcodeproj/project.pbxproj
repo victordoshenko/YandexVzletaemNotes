@@ -33,8 +33,6 @@
 		9278B85322E358120093B0D9 /* HSBColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278B85022E358120093B0D9 /* HSBColorPicker.swift */; };
 		9278B85622E382AA0093B0D9 /* NoteDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278B85422E382AA0093B0D9 /* NoteDetails.swift */; };
 		9278B85722E382AA0093B0D9 /* NoteDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9278B85522E382AA0093B0D9 /* NoteDetails.xib */; };
-		92F568E022E5E05A00486846 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F568DF22E5E05A00486846 /* GalleryViewController.swift */; };
-		92F568E222E5E87D00486846 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F568E122E5E87D00486846 /* GalleryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +64,6 @@
 		9278B85022E358120093B0D9 /* HSBColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBColorPicker.swift; sourceTree = "<group>"; };
 		9278B85422E382AA0093B0D9 /* NoteDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetails.swift; sourceTree = "<group>"; };
 		9278B85522E382AA0093B0D9 /* NoteDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetails.xib; sourceTree = "<group>"; };
-		92F568DF22E5E05A00486846 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		92F568E122E5E87D00486846 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +134,6 @@
 			children = (
 				9258B7E72339E37A008D7008 /* NotesTableViewCell.swift */,
 				9258B7E92339E3D2008D7008 /* NotesTableViewCell.xib */,
-				92F568DF22E5E05A00486846 /* GalleryViewController.swift */,
-				92F568E122E5E87D00486846 /* GalleryViewController.xib */,
 				9223757A22E4E2ED00D6D721 /* ViewControllerPhoto.swift */,
 				9278B84F22E358120093B0D9 /* ColorPickerViewClass.swift */,
 				9278B85022E358120093B0D9 /* HSBColorPicker.swift */,
@@ -223,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F568E222E5E87D00486846 /* GalleryViewController.xib in Resources */,
 				9278B85722E382AA0093B0D9 /* NoteDetails.xib in Resources */,
 				9278B83E22E2FB660093B0D9 /* LaunchScreen.storyboard in Resources */,
 				9278B83B22E2FB660093B0D9 /* Assets.xcassets in Resources */,
@@ -241,7 +234,6 @@
 			files = (
 				922167BC22EEBA4900F16CF8 /* SaveNoteDBOperation.swift in Sources */,
 				922167C522EEBA4900F16CF8 /* BaseBackendOperation.swift in Sources */,
-				92F568E022E5E05A00486846 /* GalleryViewController.swift in Sources */,
 				9278B85622E382AA0093B0D9 /* NoteDetails.swift in Sources */,
 				922167C322EEBA4900F16CF8 /* RemoveNoteOperation.swift in Sources */,
 				9278B85322E358120093B0D9 /* HSBColorPicker.swift in Sources */,

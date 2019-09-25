@@ -89,6 +89,14 @@
       </ContextState>
       <ContextState
          contextName = "ViewControllerPhoto.collectionView(_:didSelectItemAt:):ViewControllerPhoto.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "vc.imgArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.imageArray">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ColorPickerViewClass.setupViews():ColorPickerViewClass.swift">
